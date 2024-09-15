@@ -13,6 +13,50 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+nav {
+  color: #fff;
+  background-color: #242527;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+nav .list-first {
+  padding-left: 40px;
+  display: flex;
+  width: 30%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .list-first a {
+  text-decoration: none;
+  color: #fff;
+}
+nav .list-second {
+  padding-right: 40px;
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .list-second .li {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .list-second .li img {
+  width: 35px;
+}
+nav .list-second .blue {
+  color: #7500fc;
+}
+
 header {
   display: flex;
   justify-content: center;
