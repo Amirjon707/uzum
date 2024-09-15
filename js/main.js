@@ -8,6 +8,7 @@ fetch(`${BASE_URL}/goods`)
     .then((response) => response.json())
     .then((data) => get(data));
 
+
 function get(e) {
     e.forEach((item) => {
         const box = document.createElement("div");
