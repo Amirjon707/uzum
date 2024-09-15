@@ -1,8 +1,6 @@
 const BASE_URL = "http://localhost:5050";
 
-
-
-const con = document.querySelector(".container");
+const con = document.querySelector(".content");
 
 fetch(`${BASE_URL}/goods`)
     .then((response) => response.json())
