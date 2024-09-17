@@ -22,9 +22,9 @@ nav {
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
+  margin: 0 !important;
 }
 nav .list-first {
-  padding-left: 40px;
   display: flex;
   width: 30%;
   height: 100%;
@@ -36,7 +36,6 @@ nav .list-first a {
   color: #fff;
 }
 nav .list-second {
-  padding-right: 40px;
   height: 100%;
   width: 40%;
   display: flex;
@@ -121,4 +120,35 @@ header .btns button:hover {
 }
 header .btns button p {
   margin: 0 !important;
+}
+header .categories {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+header .categories a {
+  position: relative;
+  transition: 0.3s;
+  text-decoration: none;
+  color: #999;
+}
+header .categories a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1%;
+  bottom: 0;
+  left: 0;
+  background-color: #444;
+  cursor: pointer;
+  transform-origin: left;
+  transition: 0.5s;
+  transform: scaleX(0);
+}
+header .categories a:hover {
+  color: #fff;
+}
+header .categories a:hover::after {
+  transform: scaleX(1);
 }/*# sourceMappingURL=style.css.map */

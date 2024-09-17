@@ -12,24 +12,28 @@
         />
         <!-- CSS -->
         <link rel="stylesheet" href="./css/style.css" />
+        <!-- MEDIA CSS -->
+         <link rel="stylesheet" href="./css/media.css">
         <title>Document</title>
     </head>
     <body>
         <nav class="navbar">
-            <div class="list-first">
-                <a href="#" class="li"><ion-icon name="location-outline"></ion-icon> Город: <a href="#" class="region">Ташкент</a></a>
-                <a href="#" class="li"> Пункты выдачи </a>
-            </div>
-            <div class="list-second">
-                <a href="#" class="li blue"> Продавайте на Uzum </a>
-                <a href="#" class="li"> Вопрос-ответ </a>
-                <a href="#" class="li"> Мои заказы </a>
-                <a href="#" class="li"><img src="https://cdn-icons-png.flaticon.com/512/6211/6211549.png" alt="rus"> Русский </a>
+            <div class="container">
+                <div class="list-first">
+                    <a href="#" class="li"><ion-icon name="location-outline"></ion-icon> Город: <a href="#" class="region">Ташкент</a></a>
+                    <a href="#" class="li"> Пункты выдачи </a>
+                </div>
+                <div class="list-second">
+                    <a href="#" class="li blue"> Продавайте на Uzum </a>
+                    <a href="#" class="li"> Вопрос-ответ </a>
+                    <a href="#" class="li"> Мои заказы </a>
+                    <a href="#" class="li"><img src="https://cdn-icons-png.flaticon.com/512/6211/6211549.png" alt="rus"> Русский </a>
+                </div>
             </div>
         </nav>
         <header>
             <div class="container">
-                <div class="row">
+                <div class="row justify-content-between">
                     <div class="col-2">
                         <div class="logo">
                             <svg
@@ -148,18 +152,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-2">
-                        <div class="btns d-flex">
+                    <div class="col-1">
+                        <div class="btns d-flex justify-content-end">
                             <div class="user">
                                 <button class="text-light btn">
                                     <ion-icon name="person-outline"></ion-icon>
-                                    <p class="d-none d-xxl-flex">Войти</p>
                                 </button>
                             </div>
                             <div class="liked">
                                 <button class="text-light btn">
                                     <ion-icon name="heart-outline"></ion-icon>
-                                    <p class="d-none d-xxl-flex">Избранное</p>
                                 </button>
                             </div>
                             <div class="cart">
@@ -167,7 +169,6 @@
                                     <ion-icon
                                         name="bag-remove-outline"
                                     ></ion-icon>
-                                    <p class="d-none d-xxl-flex">Корзина</p>
                                 </button>
                             </div>
                         </div>
@@ -175,10 +176,12 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <a href="#">Электроника</a>
-                        <a href="#">Аудио</a>
-                        <a href="#">Компьютер</a>
-                        <a href="#">Бытовая техника</a>
+                        <div class="categories">
+                            <a href="#">Электроника</a>
+                            <a href="#">Аудио</a>
+                            <a href="#">Компьютер</a>
+                            <a href="#">Бытовая техника</a>
+                        </div>
                     </div>
                 </div>
             </div>
