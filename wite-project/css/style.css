@@ -207,6 +207,11 @@ header .categories a:hover::after {
   justify-content: space-between;
   color: #fff;
   margin: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 10px 0;
+  background: #121212;
 }
 .header .logo {
   display: flex;
@@ -348,8 +353,20 @@ header .categories a:hover::after {
 .section {
   color: #fff !important;
 }
+.section * {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
 .section h2 {
   margin: 30px 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  cursor: pointer;
+}
+.section .row {
+  gap: 0 33px;
 }
 .section .cart {
   width: 23%;
@@ -413,19 +430,38 @@ header .categories a:hover::after {
   border-bottom-right-radius: 10px;
 }
 .section .cart .cart-info .title {
+  font-size: 13px;
   -webkit-box-orient: vertical;
   display: -webkit-box;
   overflow: hidden !important;
   text-overflow: ellipsis;
   -webkit-line-clamp: 2;
+  margin-top: 5px;
+  margin-bottom: 0 !important;
 }
 .section .cart .cart-info .rating {
+  font-size: 12px;
   display: flex;
   justify-content: start;
   align-items: center;
+  color: #5a5c63;
+  margin: 3px 0 !important;
 }
 .section .cart .cart-info .rating .ratingIcon {
+  font-size: 11px;
   color: yellow;
+}
+.section .cart .cart-info .price {
+  font-size: 14px;
+}
+.section .cart .cart-info .nasiya1 {
+  margin-bottom: 25px;
+}
+.section .cart .cart-info .nasiya {
+  padding: 3px;
+  font-size: 12px;
+  background: #2d2400;
+  border-radius: 5px;
 }
 .section .cart .cart-img {
   margin: 0 !important;

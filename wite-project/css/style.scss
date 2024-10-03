@@ -217,6 +217,11 @@ header {
     justify-content: space-between;
     color: #fff;
     margin: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
+    background: #121212;
     .logo {
         display: flex;
         align-items: center;
@@ -356,8 +361,18 @@ header {
 }
 
 .section {
+    & * {
+        user-select: none;
+    }
     h2 {
         margin: 30px 0 15px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        cursor: pointer;
+    }
+    .row {
+        gap: 0 33px;
     }
     color: #fff !important;
     .cart {
@@ -431,20 +446,40 @@ header {
             border-bottom-left-radius: 10px;
             border-bottom-right-radius: 10px;
             .title {
+                font-size: 13px;
                 -webkit-box-orient: vertical;
                 display: -webkit-box;
                 overflow: hidden !important;
                 text-overflow: ellipsis;
                 -webkit-line-clamp: 2;
+                margin-top: 5px;
+                margin-bottom: 0 !important;
             }
 
             .rating {
+                font-size: 12px;
                 display: flex;
                 justify-content: start;
                 align-items: center;
+                color: #5a5c63;
+                margin: 3px 0 !important;
                 .ratingIcon {
+                    font-size: 11px;
                     color: yellow;
                 }
+            }
+            .price {
+                font-size: 14px;
+            }
+
+            .nasiya1 {
+                margin-bottom: 25px;
+            } 
+            .nasiya {
+                padding: 3px;
+                font-size: 12px;
+                background: #2d2400;
+                border-radius: 5px;
             }
         }
         .cart-img {
